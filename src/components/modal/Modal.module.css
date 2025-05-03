@@ -1,0 +1,50 @@
+.container {
+  cursor: cell;
+  position: absolute;
+  border: none;
+  width: 100dvw;
+  height: 100dvh;
+  display: grid;
+  place-content: center;
+  background-color: #00000055;
+  color: var(--color-white);
+  z-index: 20;
+}
+
+.modal {
+  cursor: auto;
+  position: relative;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  max-width: clamp(300px, 90vw, 900px);
+  max-height: 90vh;
+  gap: 16px;
+  border: none;
+  border-radius: 16px;
+  background-color: var(--color-black);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+
+  & div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+}
+
+.modal-container {
+  max-height: 100%;
+  max-width: 100%;
+  overflow-y: scroll;
+  scrollbar-width: 10px;
+  scrollbar-color: #333c46 #0a0d10;
+}

@@ -1,0 +1,45 @@
+.container {
+  position: absolute;
+  border: none;
+  border-radius: 16px;
+  display: grid;
+  height: fit-content;
+  place-content: center;
+  color: var(--color-white);
+  box-shadow: 0 0 2rem var(--color-grey);
+  z-index: 10;
+}
+
+.modal {
+  cursor: auto;
+  position: relative;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  gap: 16px;
+  border: none;
+  border-radius: 16px;
+  background-color: var(--color-black);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  
+  & div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+}
+
+.hide {
+  overflow-y: hidden;
+  height: 0;
+  width: 0;
+}

@@ -1,0 +1,78 @@
+:root {
+  --color-red: #e80053;
+  --color-pink: #f72585;
+  --color-blue: #0072f5;
+  --color-yellow: #dbaa0a;
+  --color-green: #5aba11;
+  --color-black: #0a0d10;
+  --color-dark: #12171d;
+  --color-grey: #333c46;
+  --color-white: #f6f6f6;
+}
+
+/* Css Reset june 2024 */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+#root {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+  font-family: "Roboto Mono", monospace;
+  color: var(--color-white);
+
+  background: radial-gradient(
+    ellipse at top,
+    var(--color-grey),
+    var(--color-dark)
+  );
+}
+
+#modal-root {
+  font-family: "Roboto Mono", monospace;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+    transition: none;
+  }
+}
