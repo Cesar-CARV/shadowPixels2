@@ -5,6 +5,17 @@
   padding: 8px 16px;
   background-color: var(--color-black);
 
+  & > div {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  & > div > img {
+    border-radius: 4px;
+    object-fit: contain;
+  }
+
   & h1 {
     color: var(--color-white);
     font-size: 20px;

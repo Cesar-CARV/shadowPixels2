@@ -103,7 +103,10 @@ export const Header = () => {
 
   return (
     <header className={styles.header}>
-      <h1>ShadowPixels 2.0</h1>
+      <div>
+        <img src="/icon.png" alt="logo" width={20} height={20}/>
+        <h1>ShadowPixels 2.0</h1>
+      </div>
       <nav>
         <ul>
           <li>
